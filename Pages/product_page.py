@@ -22,3 +22,9 @@ class ProductPage(BasePage):
         name_in_alert_text = name_in_alert.text
         #print(f"{name_in_alert_text}")
         assert product_name_text == name_in_alert_text, "Wrong name in basket"
+
+    def should_not_present_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "Success message is presented, but not should be"
+
+    def should_disappeared_succes_message(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), "Succes message is not disappeared"

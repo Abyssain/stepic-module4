@@ -14,3 +14,5 @@ class ProductPageLocators():
     PRODUCT_PRICE = (By.XPATH, "//div[@class='col-sm-6 product_main']/p[@class='price_color']")
     PRODUCT_NAME_IN_ALERT = (By.XPATH, "//*[@id='messages']/div[1]/div/strong")
     BASKET_PRICE = (By.XPATH, "//div[@class='alertinner ']/p/strong")
+
+    SUCCESS_MESSAGE = (By.XPATH, "//*[@id='messages']/div[1]")
