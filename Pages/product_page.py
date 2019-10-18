@@ -17,10 +17,9 @@ class ProductPage(BasePage):
     def should_be_right_product_name(self):
         product_name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME)
         product_name_text = product_name.text
-        #print(f"{product_name_text}")
         name_in_alert = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME_IN_ALERT)
         name_in_alert_text = name_in_alert.text
-        #print(f"{name_in_alert_text}")
+
         assert product_name_text == name_in_alert_text, "Wrong name in basket"
 
     def should_not_present_success_message(self):
