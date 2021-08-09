@@ -12,7 +12,7 @@ Pygments==2.4.2
 pyparsing==2.4.2
 PyPubSub==3.3.0
 pytest==5.1.1
-pywin32==224
+pywin32==301
 robotframework==3.1.2
 selenium==3.141.0
 six==1.12.0
